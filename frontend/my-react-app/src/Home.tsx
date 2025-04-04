@@ -3,7 +3,7 @@ import axios from "axios";
 
 const fetchUsers = async () => {
   const { data } = await axios.get("http://localhost:3000/GetAllUser");
-  return data.user; // Ensure this matches your API response
+  return data.user; 
 };
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
       {!isLoading && users?.length > 0 && (
         <div className="overflow-x-auto w-full max-w-4xl">
           <table className="w-full border-collapse border border-gray-300 shadow-lg rounded-md">
-            {/* Table Head */}
+          
             <thead className="bg-blue-900 text-white">
               <tr>
                 {keys.map((key, index) => (
@@ -33,7 +33,7 @@ const Home = () => {
               </tr>
             </thead>
 
-            {/* Table Body */}
+          
             <tbody>
               {users.map((user, rowIndex) => (
                 <tr key={rowIndex} className="odd:bg-gray-100 even:bg-gray-200 hover:bg-gray-300">
