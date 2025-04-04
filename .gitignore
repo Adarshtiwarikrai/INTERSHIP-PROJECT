@@ -1,0 +1,18 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Prisma-related files (keep schema but ignore generated files)
+prisma/dev.db
+prisma/dev.db-journal
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Build folders
+backend/dist/
+frontend/my-react-app/build/
