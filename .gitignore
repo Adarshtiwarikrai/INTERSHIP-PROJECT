@@ -6,12 +6,15 @@ yarn-error.log
 # Prisma-related files (keep schema but ignore generated files)
 prisma/dev.db
 prisma/dev.db-journal
+# Ignore Prisma migrations inside backend
+backend/prisma/migrations/
 
 # Environment variables
 .env
 .env.local
 .env.development
 .env.production
+
 
 # Build folders
 backend/dist/
